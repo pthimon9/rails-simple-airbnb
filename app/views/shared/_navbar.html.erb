@@ -1,0 +1,12 @@
+<div class="navbar-wagon">
+  <!-- Right Navigation -->
+    <%= link_to "Simple AirBnb", flats_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search" value="">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+       <%= link_to 'Add Flat', new_flat_path, class: "btn btn-outline-primary my-2 my-sm-0 ml-2" %>
+  </div>
+</div>

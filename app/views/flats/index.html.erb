@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+
+  <h1>All our Flats (<%= @flats.size %>)</h1>
+ <div class="row">
+  <% @flats.each do |flat| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="flat-card">
+        <div class="flat-card-image" style="background-image: '../../assets/images/naomi-hebert-188443-unsplash.jpg">
+        </div>
+        <div class="flat-card-content">
+          <div class="flat-card-title">
+            <h4>  <%= flat.name %></h4>
+            <p><%= flat.address %></p>
+          </div>
+          <div class="flex card-flat-info">
+            <div class="flex">
+              <i class="fas fa-user"></i><span>  <%= flat.number_of_guests %></span>
+              <i class="fas fa-euro-sign"></i>  <%= flat.price_per_night %>
+            </div>
+          </div>
+        </div>
+        <div class="flat-card-actions">
+          <%= link_to 'More Info', flat %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

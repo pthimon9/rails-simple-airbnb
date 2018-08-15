@@ -1,0 +1,30 @@
+.flat-card {
+  width: 100%;
+  position: relative;
+  margin: .5rem 0 1rem 0;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)
+}
+.flat-card-content {
+ background-color: #F8F9FA;
+}
+.flat-card-title {
+  h4 {
+    font-size: 18px;
+  }
+  p {
+   font-size: 15px;
+  }
+}
+.flat-card-actions{
+  font-size: 12px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.card-flat-info {
+  font-size: 15px;
+  padding: 2px;
+  margin-left: 5px;
+}
+
